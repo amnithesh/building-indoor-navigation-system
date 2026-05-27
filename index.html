@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Building A - Indoor Map Viewer</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <div class="navigation-container">
+    <h1>Building A - Indoor Map Viewer</h1>
+
+    <div class="search-area">
+      <input type="text" id="room-search" placeholder="Enter Room Number (e.g., AB010)" />
+      <button onclick="searchRoom()">Go</button>
+      <div id="search-output" class="output-message"></div>
+      <div id="direction-output" class="direction-message"></div>
+    </div>
+
+    <div id="map-area">
+      <img id="floor-plan" src="ABfloor0.png" alt="Floor Plan" class="map-image" />
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
